@@ -32,13 +32,7 @@ Five feature of our system is that:
 
 ![image](https://user-images.githubusercontent.com/37172677/97113123-9c679a00-172b-11eb-8e52-22dc81c86d4f.png)
 
-Please check Our Demo Video!!
 
-https://www.youtube.com/watch?v=dSWQJ1nAntM&feature=youtu.be
-
-For more information on our systems, please visit our website.
-
-https://crms-team.github.io/crms-page/functions.html
 
 <br/>
 
@@ -61,7 +55,6 @@ We Programing based on:
 ---
 Documentation is on our website.
 
-https://crms-team.github.io/crms-page/api.html
 
 <br/>
 
@@ -86,7 +79,6 @@ The file structure of our system consists of three things that Back-end on serve
 
 If you have a problem in start, please visit our website and check guide!
 
-https://crms-team.github.io/crms-page/guide.html
 
 <br/>
 
@@ -94,18 +86,7 @@ https://crms-team.github.io/crms-page/guide.html
 ---
 If you want contribute CRMS, Clink the Link!
 
-[Contribute](https://github.com/crms-team/crms/blob/master/CONTRIBUTING.md)
 
 ## License
 ---
 [License](https://github.com/crms-team/crms/blob/master/LICENSE)
-
-<br/>
-
-## Contact
----
-[Nevation](https://github.com/Nevation)
-
-[ReturnReason](https://github.com/ReturnReason)
-
-[backtion](https://github.com/backtion)
