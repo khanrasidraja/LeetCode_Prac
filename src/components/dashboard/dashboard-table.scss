@@ -1,0 +1,99 @@
+$darkGray: #25272b;
+$lightGray: #27262b;
+$point: #7d9edf;
+$text: #6b6e7c;
+$lightText: #9298b1;
+
+.chart-container {
+}
+
+.right-chart {
+    position: relative;
+    height: 100%;
+}
+
+.dashboard__table-container {
+    background: #1f2124;
+    padding: 1.3rem;
+    border-radius: 0.4rem;
+    overflow: scroll;
+    margin: 1rem;
+    min-height: 265px;
+    max-height: 100%;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.dashboard__table {
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+
+    & .table-bordered {
+        border: none;
+    }
+
+    & .table thead th {
+        padding: 0;
+    }
+
+    & .table tbody tr {
+        cursor: pointer;
+
+        &:hover {
+            background: #324259;
+        }
+    }
+
+    & .table th,
+    .table td {
+        padding: 0;
+    }
+    .table td {
+        &:focus {
+            outline: none;
+        }
+    }
+
+    table th {
+        width: 100px !important;
+    }
+
+    .Modify {
+        background: #ad8ff290;
+        height: 18%;
+        &:hover {
+            background: #ad8ff230 !important;
+        }
+    }
+    .Create {
+        background: #8cb1fa30;
+        &:hover {
+            background: #8cb1fa50 !important;
+        }
+    }
+    .Remove {
+        background: #f0b6cc30;
+        &:hover {
+            background: #f0b6cc40 !important;
+        }
+    }
+    .Transform {
+        background: transparent;
+    }
+}
+
+.log-page {
+    box-sizing: border-box;
+    margin-top: 0.8em;
+    width: 100%;
+    border: 2px solid #14141457;
+    border-radius: 0.4rem;
+    transition: 0.2s linear;
+    padding: 0.2em;
+    font-weight: 900;
+
+    background: $point;
+    color: $darkGray;
+}

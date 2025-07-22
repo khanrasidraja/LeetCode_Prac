@@ -1,0 +1,148 @@
+$darkGray: #1c1d20;
+$lightGray: #27262b;
+$point: #7d9edf;
+$text: #8a8b91;
+$lightText: #f1f1f1;
+
+a {
+    text-decoration: none !important;
+    color: $lightText;
+}
+
+body {
+    position: relative;
+}
+
+.Sidebar-container {
+    z-index: 999;
+    background: #151618;
+    box-shadow: 8px 1px 10px rgba(18, 18, 19, 0.247);
+    height: 100%;
+    width: 15vw;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    & + div {
+        position: relative;
+        background: $darkGray;
+    }
+
+    li {
+        text-decoration: none;
+        color: $lightText;
+    }
+}
+
+.Sidebar {
+    background: #151618;
+    color: $text;
+    height: 100%;
+    position: relative;
+
+    & .Sidebar-title {
+        text-align: center;
+        font-weight: 700;
+        color: $point;
+        font-size: 1.2rem;
+        padding-top: 0.7rem;
+    }
+
+    & ul {
+        margin: 0 auto;
+    }
+
+    & li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+        padding: 10px;
+        padding-left: 15px;
+        border: 1px solid transparent;
+        transition: linear 0.2s;
+        width: 90%;
+        margin: 0 auto;
+
+        &:hover {
+            background: #45567a41;
+            transition: linear 0.2s;
+            color: rgb(236, 236, 236);
+
+            .material-icons {
+                color: $point;
+                transition: 0.2 linear;
+            }
+        }
+
+        p {
+            margin-left: 10px;
+            margin-bottom: 0;
+            text-align: center;
+        }
+    }
+
+    li + li {
+        margin-top: 5px;
+    }
+
+    .menu {
+        transition: 0.2 linear;
+        & p {
+            font-size: 15px;
+            cursor: pointer;
+            &:hover {
+                transition: 0.2s linear;
+            }
+        }
+
+        & .menulist-in {
+            font-weight: 900;
+            font-size: 0.9rem;
+            transition: 0.4s linear;
+            margin-top: 10px;
+            text-indent: 36px;
+            color: $text;
+            cursor: default;
+        }
+        & .submenu {
+            color: "#9298b1" !important;
+            text-indent: 57px;
+            font-size: 13px;
+            &:hover {
+                color: $point;
+            }
+        }
+
+        & .menulist-in1 {
+            font-weight: 900;
+            font-size: 0.9rem;
+            transition: 0.4s linear;
+            margin-top: 10px;
+            text-indent: 36px;
+            color: $text;
+            &:hover {
+                color: $point;
+            }
+        }
+    }
+}
+
+.sidebar-logout-btn {
+    position: absolute;
+    bottom: 0px;
+}
+
+.sidebar-refresh-btn{
+    position: absolute;
+    right:0px;
+    bottom: 0px;
+}
+
+@media screen and (max-width: 1450px) {
+    .Sidebar-container {
+        width: 200px;
+    }
+}

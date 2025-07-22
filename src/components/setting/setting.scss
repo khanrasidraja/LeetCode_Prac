@@ -1,0 +1,236 @@
+$darkGray: #25272b;
+$lightGray: #27262b;
+$point: #7d9edf;
+$text: #6b6e7c;
+$lightText: #9298b1;
+$cardColor: #232429;
+
+.setting-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    min-width: 85%;
+
+    &.openModal {
+        z-index: 999;
+        background-color: $darkGray;
+    }
+}
+
+.setting-title {
+    color: $point;
+    margin: 0 auto;
+    padding-top: 15vh;
+    float: right;
+    width: 83%;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.setting-box-container {
+    width: 85%;
+    float: right;
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.setting-box {
+    width: 270px;
+    height: 350px;
+    border: 3px solid #445069;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2rem;
+    color: $text;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.5s;
+
+    &:hover {
+        transform: scale(1.1);
+        background: #00001a13;
+        box-shadow: 7px 7px rgba(27, 28, 31, 0.678);
+        color: $point;
+        border: 4px solid $point;
+    }
+
+    & + & {
+        margin-left: 80px;
+    }
+}
+
+.setting-box-deco {
+    background: linear-gradient(to bottom, #3838384d, #3535350e, #ffc14d00);
+    width: 90%;
+    height: 15%;
+    position: absolute;
+    top: 10px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+.setting-subtitle {
+    margin: 0;
+    font-size: 1.5rem;
+
+    &:first-child {
+        margin-bottom: 2rem;
+    }
+}
+
+.icon {
+    font-size: 3.7rem;
+    margin-bottom: 1.7rem;
+}
+.previous-btn-container {
+    position: relative;
+
+    & .previous-btn {
+        cursor: pointer;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+// MODAL
+
+.modal-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    background-color: #202024c0;
+    z-index: 999;
+}
+
+.modal {
+    z-index: 999;
+    background-color: var(--background-color);
+    max-width: 400px;
+    min-width: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 14px;
+    box-shadow: 0 10px 10px rgba(31, 30, 30, 0.432);
+    transition: 2s;
+}
+
+.modal-content {
+    border: none !important;
+}
+
+.select-container {
+}
+
+.select-title,
+.password-title {
+    font-size: 1.7em;
+    color: $point;
+    text-align: center;
+    font-weight: 500;
+}
+
+.select {
+    position: relative;
+    border: 2px solid var(--point-color);
+    box-sizing: border-box;
+    padding: 0 10px;
+    height: 40px;
+    width: 70%;
+    line-height: 35px;
+    font-size: 16px;
+    margin: 0 auto;
+    cursor: pointer;
+    color: var(--point-color);
+}
+
+.select:after {
+    content: "▼";
+    position: absolute;
+    top: 0;
+    right: 1rem;
+}
+
+.select:hover {
+    background-color: #2e303398;
+}
+
+.select.region {
+    margin-top: 20px;
+}
+
+.selected-list {
+    padding: 0;
+}
+
+.selected-cloudlist {
+}
+
+.select-input {
+    width: 70%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: transparent;
+    font-size: 16px;
+    border: transparent;
+    border-bottom: 2px solid var(--point-color);
+    position: relative;
+    color: var(--text-white-color);
+}
+
+.select-input:focus {
+    outline: none;
+}
+
+.select-btn {
+    width: 70%;
+    background-color: var(--point-color);
+    color: var(--text-gray-color);
+    margin-top: 1rem;
+    margin-bottom: 8px;
+}
+
+.select-btn:hover {
+    width: 70%;
+    background-color: var(--point-hover-color);
+    color: var(--text-gray-color);
+}
+
+.select-btn:focus {
+    outline: none;
+    color: var(--text-gray-color);
+}
+
+.select-Supplier {
+    margin-top: 30px;
+}
+
+.select-bottom-text {
+    margin: 30px 0;
+    color: $lightText;
+}
+
+.select-bottom-text span:first-child {
+    text-align: left;
+    margin-right: 60px;
+    color: var(--point-color);
+}
+
+.select-bottom-text span {
+    margin: 0 10px;
+    cursor: pointer;
+}
